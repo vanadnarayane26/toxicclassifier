@@ -1,0 +1,25 @@
+[project]
+name = "toxicclf"
+version = "0.1.0"
+description = "Toxic Comment Classifier based on multi lable classification"
+authors = [
+    {name = "Vanad Narayane"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "torch (>=2.10.0,<3.0.0)",
+    "pandas (>=3.0.0,<4.0.0)",
+    "scikit-learn (>=1.8.0,<2.0.0)",
+    "nltk (>=3.9.2,<4.0.0)",
+    "typer (>=0.23.1,<0.24.0)",
+    "collection (>=0.1.6,<0.2.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.scripts]
+toxicclf = "toxicclf.cli:app"
